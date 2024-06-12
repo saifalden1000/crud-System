@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+h1 {
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+#addProduct {
+  background-color: rgb(81, 45, 168);
+  color: #fff;
+  font-size: 12px;
+  padding: 9px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.item {
+  box-shadow: 0 5px 15px rgba(81, 45, 168, 0.3);
+}

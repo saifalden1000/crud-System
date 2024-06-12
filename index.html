@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- &  ================== bootstart ================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- &  ================== main css ================-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Crud System</title>
+  </head>
+  <body>
+    <!-- & =================== crud inputs  ====================-->
+    <div class="container-lg py-5">
+      <h1 class="mb-5 text-center fw-bolder">Product Mangement System</h1>
+      <div class="w-75 mx-auto">
+        <div class="input-field form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="ProductName"
+            placeholder="ProductName"
+          />
+          <label for="ProductName">Product Name </label>
+        </div>
+        <div class="input-field form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="ProductPrice"
+            placeholder="ProductPrice"
+          />
+          <label for="ProductPrice">Product Price</label>
+        </div>
+        <div class="input-field form-floating mb-3">
+          <input
+            list="Categories"
+            type="text"
+            class="form-control"
+            id="ProductCategory"
+            placeholder="ProductCategory"
+          />
+          <label for="ProductCategory">Product Category </label>
+          <datalist id="Categories">
+            <option value="TV" />
+            <option value="Mobile" />
+            <option value="Laptop" />
+            <option value="Screens" />
+            <option value="Others" />
+          </datalist>
+        </div>
+        <div class="input-field form-floating mb-3">
+          <textarea
+            class="form-control"
+            id="ProductDesc"
+            placeholder="ProductDesc"
+          ></textarea>
+          <label for="ProductDesc">Product Description </label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="file"
+            class="form-control"
+            id="ProductImg"
+            placeholder="ProductImg"
+          />
+          <label for="ProductImg">Product image </label>
+        </div>
+        <button id="updateProduct" class="btn btn-warning d-none">
+          Save Update
+        </button>
+        <button id="addProduct">Add Product</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="searchProduct"
+          placeholder="searchProduct"
+        />
+        <label for="searchProduct"> Search </label>
+      </div>
+    </div>
+    <!-- & ============= crud items ==============-->
+    <div class="container p-5">
+      <div class="row gy-4" id="productItems"></div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
